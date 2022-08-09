@@ -7,7 +7,7 @@ Se realizaron varias encuestas para examinar las conexiones SSL que brindaron in
 En 2012, había un subprograma Shockwave (SWF) del lado del cliente desarrollado por [3] y alojado en Facebook que intentaba detectar un certificado falsificado. El applet imitó el protocolo de enlace SSL del navegador al abrir una conexión de socket al sitio de Facebook. El applet registra el protocolo de enlace SSL e informa la cadena de certificados observada a los servidores de registro.
 
 Entre noviembre de 2009 y abril de 2011, se realizó un análisis de la PKI x.509 utilizando la metodología de mediciones activas y pasivas. El escaneo activo en la lista de Alexa Top 1 Million Hosts usaba nmap y OpenSSL para sondear la cadena de certificados completa y las propiedades de conexión TLS/SSL. El escaneo pasivo usó procesamiento de dos pasos utilizando Bro como herramienta de procesamiento TLS/SSL de forma independiente del puerto.
-Los resultados de las encuestas SSL/TLS anteriores para las condiciones anormales de un certificado se pueden resumir a continuación. Estos resultados se utilizarán como guía para redactar las reglas de la política.
+Los resultados de las encuestas SSL/TLS anteriores para las condiciones anormales de un certificado se pueden resumir a continuación. Estos resultados se utilizarán como guía para redactar las [reglas especificadas](https://github.com/aaran1/genexis) de la política.
 
 • El tamaño de los certificados es pequeño, inferior a un kilobyte.
 • Las cadenas de certificados tienen una profundidad de uno sin certificados intermedios. Si hay más de una cadena, generalmente es una cadena rota, no se emite un certificado de CA raíz, el certificado en la cadena ha caducado o no se pueden verificar sus firmas en la cadena.
